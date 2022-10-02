@@ -1,0 +1,550 @@
+/*
+GLOBAL
+*/
+
+body {
+    max-width: 1400px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color:#FFFFFF;
+    margin: auto;
+    font-size: 100%;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.375rem;
+}
+
+h2, h3, input {
+    font-size: 1.125rem;
+}
+
+p, 
+li {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-left: 0%;
+    margin: 0%;
+}
+
+i {
+    color: #0065FC;
+    padding: 1%;
+}
+
+a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+a:link,
+a:visited {
+	color: black;
+}
+
+a:hover,
+li:active {
+    color: #0065FC;
+}
+
+/*
+HEADER PART
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-top: 30%;
+}
+
+
+
+nav li {
+	margin-right: 20%;
+    padding-top: 10%;
+    border-top: 3px solid transparent;
+}
+
+nav li:hover {
+    border-top: 3px solid #0065FC;
+}
+
+/*
+SECTION 1 
+*/
+
+#section1 {
+    margin-top: 2%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    justify-content: left;
+    margin: 20px;
+}
+
+form > div i {
+    color: black;
+}
+
+form div {
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+form button {
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: center;
+    padding: 15px 16px;
+    gap: 10px;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+form button .icons {
+    display: none;
+}
+
+form button:hover {
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    color: black;
+}
+
+form button > i {
+    color: white;
+}
+
+input { 
+    height: 53px;
+    border: white;
+}
+
+.filters {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5%;
+}
+
+.filters-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 5%;
+    width: 100%;
+}
+
+.filters button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    width: 20%;
+
+}
+
+.filters button .icons {
+    padding: 5%;
+}
+
+.filters button:hover {
+    background-color: #DEEBFF;
+    border-color: #428effa3;
+}
+
+.ville {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+/*
+MAIN
+*/
+
+main {
+    display: flex;
+    gap: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#section2 {
+    flex: 2;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.lodging {
+    margin-bottom: 5%;
+}
+
+#section2 > a {
+    margin: 5%;
+}
+
+#section2 h1,
+.lodging,
+aside > div,
+.container-pop {
+    padding: 0% 5% 0% 5%;
+}
+
+#section2 h1,
+aside > div {
+    margin: 2% 0% 5% 0%;
+}
+
+.lodging,
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.container,
+.container-pop {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 5px;
+    width: 28%;
+    height: auto;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.443);
+}
+
+.container img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.stars {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+aside {
+    flex: 1;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+#popular {
+    flex-direction: column;
+}
+
+aside > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10%;
+}
+aside figure {
+    display: flex;
+}
+
+.container-pop {
+    width: 100%;
+    position: relative;
+    margin: 0% 10% 5% 10%;
+}
+
+.container-pop img {
+    width: 33%;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.container-pop > .stars {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+aside .container-text {
+    margin: 10% 1% 0% 7%;
+
+}
+
+/* 
+SECTION 3
+*/
+
+#section3 h1 {
+    margin-bottom: 2%;
+}
+
+#section3 > div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3%;
+}
+
+.container-activities {
+    flex: 1;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.443);
+}
+
+.container-activities figure img {
+    border-radius: 25px 25px 0px 0px;
+    height: 444px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-activities figcaption {
+    margin: 5%;
+}
+
+.c-a-mobile {
+    display: none;
+}
+
+/*
+FOOTER
+*/
+footer {
+    margin-top: 5%;
+    background: #F2F2F2;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+/* 
+TABLETTE
+*/
+
+@media screen and (max-width: 992px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    #section2 {
+        margin-bottom: 5%;
+    }
+
+    .container-pop {
+        margin: 2%;
+    }
+
+    aside > div {
+        margin-bottom: 0%;
+    }
+
+    #popular {
+        flex-direction: row;
+        margin-top: 0%;
+        padding: 0%;
+    }
+
+    #popular img {
+        width: 40%;
+    }
+    
+    .container-pop > .stars {
+        left: 45%;
+    }
+
+    .container-activities figure img {
+        height: 222px;
+        width: 100%;
+    }
+}
+
+/*
+MOBILE 
+*/
+@media screen and (max-width: 768px) {
+
+    body {
+        width: fit-content;     
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.875rem;
+    }
+
+    h1,
+    input {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1.175rem;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        border-bottom: 5px solid rgba(128, 128, 128, 0.55);
+        padding-bottom: 4%;
+        padding-top: 4%;
+        width: 200%;
+        margin: 6% 0% 0% 0%;
+    }
+
+    nav ul li:hover {
+        border-bottom: 5px solid #0065FC;
+        border-top: 0px;
+        padding-bottom: 4%;
+        padding-top: 4%;
+        margin-top: 6%;
+    }
+
+    nav ul li:active {
+        border-bottom: 5px solid #0065FC;
+        padding-bottom: 4%;
+        padding-top: 4%;
+        margin-top: 6%;
+    }
+
+    .map {
+        height: auto;
+    }
+
+    form {
+        justify-content: center;
+        width: 100%;
+    }
+
+    form input {
+        width: 75%;
+        height: 100%;
+    }
+
+    form span {
+        display: none;
+    }
+
+    form button .icons {
+        display: block;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 3%;
+    }
+
+    .filters-buttons {
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+
+    .filters button {
+        padding: 1% 5% 2% 1%;
+        width: 250px;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    /*
+    MAIN-MOBILE
+    */
+    
+    #section2 {
+        margin-top: 2%;
+        order: 2;
+        background-color: #FFFFFF;
+    }
+
+    #popular {
+        flex-direction: column;
+    }
+
+    .container-pop {
+        width: 90%;
+    }
+
+    aside .container-text,
+    #section3 .container-text {
+        margin-top: 2%;
+    }
+
+    .lodging {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #section3 > div {
+        flex-direction: column;
+    }
+
+    .c-a-mobile {
+        display: block;
+    }
+
+    .container-activities {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .container-activities figcaption {
+        margin: 3%;
+    }
+}
